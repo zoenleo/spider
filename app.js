@@ -8,6 +8,6 @@ app.use('/', express.static(path.join(__dirname, '/view')));
 
 app.use('/api', api);
 
-app.listen(8080, () => {
-    console.log('start app listening on port 8080!');
+app.listen(80, () => {
+    console.log('start app listening on port 80!');
 });
