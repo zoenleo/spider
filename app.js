@@ -4,7 +4,7 @@ const api = require('./api');
 
 const app = express();
 
-app.use('/', express.static(path.join(__dirname, '/dist')));
+app.use('/', express.static(path.join(__dirname, '/view')));
 
 app.use('/api', api);
 
