@@ -1,10 +1,10 @@
 {
     "name": "spider",
     "version": "1.0.0",
-    "description": "a spider progress",
-    "main": "index.js",
+    "description": "a spider project",
+    "main": "app.js",
     "scripts": {
-        "start": "node app.js",
+        "start": "PORT=8080 node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -21,6 +21,8 @@
     },
     "homepage": "https://github.com/zoenleo/spider#readme",
     "dependencies": {
-        "express": "^4.16.3"
+        "cheerio": "^1.0.0-rc.2",
+        "express": "^4.16.3",
+        "request": "^2.88.0"
     }
 }

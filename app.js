@@ -8,6 +8,10 @@ app.use('/', express.static(path.join(__dirname, '/view')));
 
 app.use('/api', api);
 
-app.listen(80, () => {
-    console.log('start app listening on port 80!');
+const PORT = process.env.PORT || 80;
+
+app.listen(PORT, () => {
+    console.log(`start app listening on port ${PORT}!`);
 });
+
+require('./server');
